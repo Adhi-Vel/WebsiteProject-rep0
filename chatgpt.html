@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <script src="script.js" async></script>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      div.header {
+        display: flex;
+        align-items: center; /* Vertically center items */
+        justify-content: space-between; /* Distribute items evenly */
+        color: ghostwhite;
+        background-color: #000f3c;
+        position: sticky;
+        width: 100%;
+        padding: 20px;
+      }
+      div.logo {
+        border: 2px solid coral;
+        padding: 20px;
+        margin-left: 2px;
+        border-radius: 20px;
+        float: left;
+        background: gray;
+      }
+      nav ul {
+        display: flex;
+        gap: 20px;
+      }
+      nav ul li {
+        list-style: none;
+      }
+      nav a {
+        text-decoration: none;
+        color: yellowgreen;
+        font-size: 20px;
+      }
+      nav a:hover {
+        background-color: #777;
+      }
+      .menu {
+        display: block;
+      }
+      .menu-icon {
+        display: none;
+      }
+      #menu-toggle {
+        display: none; /* Hide the checkbox */
+      }
+      /* Styles for mobile view */
+      @media only screen and (max-width: 768px) {
+        .menu {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          text-align: center;
+        }
+        .menu-icon {
+          display: block;
+          position: fixed;
+          top: 15px;
+          right: 15px;
+          font-size: 20px;
+          cursor: pointer;
+          z-index: 9999;
+          color: white;
+        }
+        .menu-icon:hover {
+          color: #ddd;
+        }
+        .menu-icon.active {
+          color: #ddd;
+        }
+        .menu ul {
+          list-style: none;
+          margin-top: 50px;
+          padding: 0;
+        }
+        .menu ul li {
+          list-style: none;
+          margin: 10px 0;
+        }
+        .menu ul li a {
+          display: block;
+          color: white;
+          text-decoration: none;
+          padding: 10px 0;
+        }
+        #menu-toggle:checked + .menu {
+          display: block;
+        }
+      }
+      .ButtonForDonate {
+        padding: 10px;
+        background-color: darkorange;
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 100px;
+        margin: 0;
+      }
+      /* ............................................. */
+      footer {
+        background-color: #4caf50;
+        color: white;
+        padding: 30px 0;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .footer-container div {
+        width: 30%;
+        padding: 10px;
+      }
+
+      .footer-container h3 {
+        color: white;
+      }
+
+      .footer-container ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-container ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-container ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer-container ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .newsletter form {
+        display: flex;
+      }
+
+      .newsletter input[type="email"] {
+        flex: 1;
+        padding: 8px;
+        border: none;
+      }
+
+      .newsletter button {
+        padding: 8px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .newsletter button:hover {
+        background-color: #555;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .main {
+        background-color: #000f3c;
+      }
+
+      .coverpage {
+        background-image: url("waterfall.jpg"); /* Replace with your animal image */
+        background-size: cover;
+        background-blend-mode: overlay; /* Blend image with background color */
+        color: white;
+        padding: 100px 20px; /* Adjust padding as needed */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <h3>Wildlife</h3>
+          <h3>Ecosystem</h3>
+        </div>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <input type="checkbox" id="menu-toggle" />
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav> -->
+        <button>
+          <a href="#" class="ButtonForDonate">Donate</a>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="coverpage">
+        <section>
+          <h1>Welcome to Flora & Fauna</h1>
+          <p>Discover the beauty of nature.</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="legal">
+          <h3>Legal</h3>
+          <br />
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h3>Find Us</h3>
+          <br />
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <br />
+          <p>Subscribe to our newsletter for updates:</p>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

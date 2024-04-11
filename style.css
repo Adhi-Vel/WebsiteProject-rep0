@@ -1,0 +1,166 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+div.header-container {
+  width: 100%;
+  height: 112px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: ghostwhite;
+  background-color: #000f3c;
+  /* position: sticky; 
+  overflow: hidden;  */
+}
+div.logo{
+  float: left;
+  height: 72px;
+  width: 300px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  /* justify-content: space-around;
+  padding: 30px; */
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+  /* display: inline-block;
+  margin-right: 10px; */
+}
+nav a {
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 20px;
+}
+/* nav a:target {
+  font-weight: bold;
+  color: red;
+} */
+nav a:hover, nav a:focus {
+  color: red;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: aqua; 
+  transition: width 0.3s ease; 
+}
+nav a:hover::after, nav a:focus::after {
+  width: 100%;
+}
+/* ul:hover li:not(:hover){
+  filter: blur(0.5px); 
+} */
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+.ButtonForDonate {
+  padding: 10px;
+  background-color: #ff3c10;
+  color: black;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  display: inline-block;
+  border-radius: 100px;
+}
+/* ---------------------------------- */
+main {
+  min-height: 100vh;
+  background-color: #000f3c;
+}
+.coverpage {
+  background-image: url("waterfall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 80vh;
+  padding: 200px 100px; /* Adjust padding as needed */
+  text-align: center;
+  color: white;
+}
+.insights {
+  display: flex;
+  min-height: 50vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.insights h3 {
+  width: 100%;
+  padding: 20px;
+  margin-left: 1%;
+  color: white;
+  text-align: left;
+}
+.insights div {
+  width: 30%;
+  margin: 1%;
+  border: 1px solid aqua;
+}
+/* ---------------------------------- */
+div.footer-container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #006c07;
+  color: white;
+}
+div.footer-container ul {
+  list-style: none;
+}
+div.footer-container ul li {
+  margin-bottom: 10px;
+}
+div.footer-container ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+div.footer-container ul li a img {
+  margin-right: 10px;
+}
+div.footer-container ul li a:hover {
+  text-shadow: 0 0 5px white;
+}
+.newsletter form {
+  display: flex;
+}
+.newsletter input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+}
+.newsletter button {
+  padding: 8px 20px;
+  background-color: #c8fc4f;
+  color: #173803;
+  border: none;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #d4f588;
+}
+.copyright {
+  background-image: none;
+  text-align: center;
+  margin-top: 20px;
+}
