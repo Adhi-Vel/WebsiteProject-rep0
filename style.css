@@ -11,7 +11,7 @@ div.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: ghostwhite;
+  /* background-color: ghostwhite; */
   background-color: #000f3c;
   /* position: sticky; 
   overflow: hidden;  */
@@ -94,25 +94,49 @@ main {
   text-align: center;
   color: white;
 }
+@keyframes flyInFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+.coverpage section h1,
+.coverpage section h3,
+.coverpage section p {
+  animation: flyInFromLeft 1.25s ease forwards;
+}
+
 .insights {
   display: flex;
   min-height: 50vh;
-  flex-wrap: wrap;
+  width: 100%;
+  /* flex-wrap: wrap; */
   justify-content: center;
   text-align: center;
 }
-.insights h3 {
+.insight-heading{
   width: 100%;
   padding: 20px;
   margin-left: 1%;
   color: white;
   text-align: left;
+  display: block;
 }
 .insights div {
-  width: 30%;
+  /* width: 30%; */
   margin: 1%;
   border: 1px solid aqua;
 }
+.insights img{
+  margin-top: 2%;
+  width: 96%;
+  height: 40vh;
+}
+
 /* ---------------------------------- */
 div.footer-container {
   width: 100%;
