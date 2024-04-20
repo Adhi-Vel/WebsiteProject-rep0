@@ -5,101 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rectangle Carousel</title>
   <style>
-    .carousel-container {
-      position: relative;
-      overflow: hidden;
-      width: 340px; /* Width for 3 rectangles */
-      height: 200px; /* Adjust height as needed */
-      margin: 20px auto;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  font-family:ubuntu;
+}
 
-    .carousel {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .rectangle {
-      flex: 0 0 auto;
-      width: 100px; /* Adjust width as needed */
-      height: 100%;
-      margin: 0 10px; /* Adjust margin as needed */
-      background-color: #ccc; /* Adjust background color as needed */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 24px;
-      cursor: pointer;
-      color: black;
-    }
-
-    .left-arrow {
-      left: 10px;
-    }
-
-    .right-arrow {
-      right: 10px;
-    }
+body {
+  background-color: #ff4d4d;
+}
+.accord {
+  width: 610px;
+  margin: auto;
+  margin-top: 100px;
+  height: 400px;
+  overflow: hidden;
+  border: white 3px solid;
+  background-color: white;
+  transition: all 0.8s ease;
+}
+.accord ul li {
+  width: 150px;
+  display: block;
+  float: left;
+  position: relative;
+  border-left: 2px solid white;
+  height: 400px;
+  transition: all 0.5s ease, opacity 0.2s ease;
+  opacity: 0.8;
+  backface-visibility: visible  ;
+}
+.accord ul li img {
+  width: 300px;
+  height: inherit;
+}
+.title {
+  transition: all 0.5s ease-in;
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  display: block;
+  background-color: rgba(89, 89, 89, 0.4);
+}
+.title a {
+  font-size: 110%;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+.accord:hover {
+  box-shadow: 6px 6px 10px 5px grey;
+  transform: scale(1.1, 1.1);
+}
+.accord ul:hover li {
+  width: 100px;
+}
+.accord ul li:hover {
+  width: 300px;
+  opacity: 1;
+}
   </style>
 </head>
 <body>
-  <div class="carousel-container">
-    <div class="arrow left-arrow" onclick="moveCarousel(-1)">&lt;</div>
-    <div class="carousel">
-      <div class="rectangle">Rectangle 1</div>
-      <div class="rectangle">Rectangle 2</div>
-      <div class="rectangle">Rectangle 3</div>
-      <div class="rectangle">Rectangle 4</div>
-      <div class="rectangle">Rectangle 5</div>
-    </div>
-    <div class="arrow right-arrow" onclick="moveCarousel(1)">&gt;</div>
-  </div>
-
-  <script>
-let currentIndex = 1;
-const slides = document.querySelectorAll('.rectangle');
-const totalSlides = slides.length;
-const slideWidth = 120; // Adjust based on rectangle width + margin
-let clickCount = 0;
-
-function moveCarousel(direction) {
-  if (direction === -1) {
-    currentIndex += direction;
-    clickCount = 0; // Reset click count when going back to the first slide
-  } else {
-    currentIndex += direction;
-    clickCount++; // Increment click count when going forward
-  }
-
-  if (currentIndex < 1) {
-    currentIndex = totalSlides;
-    document.querySelector('.carousel').style.transform = `translateX(${-slideWidth * (totalSlides - 3)}px)`;
-  } else if (currentIndex > totalSlides) {
-    currentIndex = 1;
-    document.querySelector('.carousel').style.transform = 'translateX(0)';
-  } else {
-    const offset = -(currentIndex - 1) * slideWidth;
-    document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
-  }
-
-  if (clickCount >= 3) {
-    currentIndex = 1;
-    document.querySelector('.carousel').style.transform = 'translateX(0)';
-    clickCount = 0;
-  }
-
-  // Adjust currentIndex if going beyond boundaries
-  if (currentIndex === 0) {
-    currentIndex = totalSlides;
-  } else if (currentIndex === totalSlides + 1) {
-    currentIndex = 1;
-  }
-}
-  </script>
+  <div class="accord">
+		<ul>
+			<li>
+				<div class="title">
+					<a href="#">the style</a>
+				</div>
+				<img src="https://p1.pxfuel.com/preview/1015/988/1021/watch-fashion-accessories-objects.jpg" alt=""/>
+			</li>
+			<li>
+				<div class="title">
+					<a href="#">A leaf </a>
+				</div>
+				<img src="https://p0.pxfuel.com/preview/248/813/143/achievement-adult-battle-black.jpg" alt="">
+			</li>
+			<li>
+				<div class="title">
+					<a href="#">rose</a>
+				</div>
+				<img src="https://p0.pxfuel.com/preview/990/311/594/coffee-cup-mug-office.jpg" alt=""/>
+			</li>
+			<li>
+				<div class="title">
+					<a href="#">the water</a>
+				</div>
+				<img src="https://p1.pxfuel.com/preview/259/365/195/finger-pointing-hands-watch.jpg" alt=""/>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
