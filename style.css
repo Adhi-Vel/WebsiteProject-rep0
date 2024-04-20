@@ -136,7 +136,86 @@ main {
   width: 96%;
   height: 40vh;
 }
+/* ---------------------------------- */
+.BelowCoverpage{
+  background-color: white;
+  padding: 30px;
+}
+/* .Slider-Container{
+  position: relative;
+  overflow: hidden;
+  width: 340px;
+  height: 200px;
+  margin: 20px auto
+}
+.FiveSliderRec{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.S-rectangle{
+  flex: 0 0 auto;
+  width: 100px;
+  height: 700px;
+  margin: 0 10px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+.left-arrow {
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
+} */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 340px; /* Width for 3 rectangles */
+  height: 200px; /* Adjust height as needed */
+  margin: 20px auto;
+}
 
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rectangle {
+  flex: 0 0 auto;
+  width: 100px; /* Adjust width as needed */
+  height: 100%;
+  margin: 0 10px; /* Adjust margin as needed */
+  background-color: #ccc; /* Adjust background color as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
 /* ---------------------------------- */
 div.footer-container {
   width: 100%;

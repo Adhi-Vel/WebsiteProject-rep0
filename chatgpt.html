@@ -1,127 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-    body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #fff; 
-  transition: width 0.3s ease; 
-}
-
-nav a:hover::after,
-nav a.active::after {
-  width: 100%;
-}
-
-.main {
-  padding: 20px;
-}
-
-.coverpage {
-  position: relative;
-}
-
-.coverpage img {
-  width: 100%;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  color: #fff;
-}
-
-.overlay h1 {
-  font-size: 3em;
-}
-
-.overlay h3 {
-  font-size: 2em;
-}
-
-.overlay p {
-  font-size: 1.5em;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wildlife Charity</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Rectangle Carousel</title>
+  <style>
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+      width: 340px; /* Width for 3 rectangles */
+      height: 200px; /* Adjust height as needed */
+      margin: 20px auto;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .rectangle {
+      flex: 0 0 auto;
+      width: 100px; /* Adjust width as needed */
+      height: 100%;
+      margin: 0 10px; /* Adjust margin as needed */
+      background-color: #ccc; /* Adjust background color as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+      color: black;
+    }
+
+    .left-arrow {
+      left: 10px;
+    }
+
+    .right-arrow {
+      right: 10px;
+    }
+  </style>
 </head>
 <body>
-
-<header>
-  <nav>
-    <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <div class="coverpage">
-    <img src="Albatross.jpg" alt="Forest">
-    <div class="overlay">
-      <h1>Welcome to Wildlife Conservation</h1>
-      <h3>Protecting Nature, Preserving Life</h3>
-      <p>Discover the beauty of nature.</p>
-      <p>Join us in safeguarding our planet's precious wildlife. Together, we can make a difference.</p>
+  <div class="carousel-container">
+    <div class="arrow left-arrow" onclick="moveCarousel(-1)">&lt;</div>
+    <div class="carousel">
+      <div class="rectangle">Rectangle 1</div>
+      <div class="rectangle">Rectangle 2</div>
+      <div class="rectangle">Rectangle 3</div>
+      <div class="rectangle">Rectangle 4</div>
+      <div class="rectangle">Rectangle 5</div>
     </div>
+    <div class="arrow right-arrow" onclick="moveCarousel(1)">&gt;</div>
   </div>
-</main>
 
-<footer>
-  <p>&copy; 2024 Wildlife Conservation Organization. All rights reserved.</p>
-</footer>
+  <script>
+let currentIndex = 1;
+const slides = document.querySelectorAll('.rectangle');
+const totalSlides = slides.length;
+const slideWidth = 120; // Adjust based on rectangle width + margin
+let clickCount = 0;
 
+function moveCarousel(direction) {
+  if (direction === -1) {
+    currentIndex += direction;
+    clickCount = 0; // Reset click count when going back to the first slide
+  } else {
+    currentIndex += direction;
+    clickCount++; // Increment click count when going forward
+  }
+
+  if (currentIndex < 1) {
+    currentIndex = totalSlides;
+    document.querySelector('.carousel').style.transform = `translateX(${-slideWidth * (totalSlides - 3)}px)`;
+  } else if (currentIndex > totalSlides) {
+    currentIndex = 1;
+    document.querySelector('.carousel').style.transform = 'translateX(0)';
+  } else {
+    const offset = -(currentIndex - 1) * slideWidth;
+    document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
+  }
+
+  if (clickCount >= 3) {
+    currentIndex = 1;
+    document.querySelector('.carousel').style.transform = 'translateX(0)';
+    clickCount = 0;
+  }
+
+  // Adjust currentIndex if going beyond boundaries
+  if (currentIndex === 0) {
+    currentIndex = totalSlides;
+  } else if (currentIndex === totalSlides + 1) {
+    currentIndex = 1;
+  }
+}
+  </script>
 </body>
 </html>
