@@ -94,12 +94,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 100px;
+    gap: 40px;
   }
-  .Textslot1, .ImageSlot1, .Textslot2, .Imageslot2, .Textslot3, .Imageslot3{
-    height: auto;
-    width: 50vh;
+  .AboutUsContents h1{
+    font-size: 50px;
+  }
+  .AboutUsContents p{
+    font-size: 20px;
+  }
+  .Textslot1, .Textslot2, .Textslot3, .ImageSlot1, .ImageSlot2 ,.ImageSlot3{
+    height: 60vh;
+    width: 35vw;
+    padding: 40px;
     border: 1px solid black;
   }
+  .AboutUsLastH{
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .AboutUsLast{
+  padding: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
   /* -------------------------------------------------- */
   div.footer-container {
     width: 100%;
