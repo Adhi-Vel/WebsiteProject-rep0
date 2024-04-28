@@ -5,67 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature Reserves</title>
     <style>
-          .nature-reserves {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        .nature-reserves h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-decoration: underline;
-        }
-
-        .nature-reserves p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        .ServicesBottom {
-    padding: 20px;
-    background-color: #f8f9fa; /* Light background color */
-    border-left: 5px solid #007bff; /* Blue left border */
-    margin-top: 20px; /* Add some space above */
-    position: relative; /* Positioning for pseudo-elements */
+        .Donation h1{
+font-size:80px;
+color: #000;
+position: relative;
+padding: 50px;
+background:#95258d;
+margin: auto;
+text-align: center;
 }
 
-.ServicesBottom h5 {
-    font-size: 18px;
-    font-style: italic; /* Italic font style */
-    color: #333; /* Dark text color */
+.Donation p{
+font-size: 40px;
+color:black;
+padding: 35px;
+justify-content: space-between;
+line-height: 1.5;
+margin-left: 30px;
 }
 
-/* Adding quotation mark before the content */
-.ServicesBottom h5:before {
-    content: open-quote; /* Unicode for open-quote */
-    font-size: 24px; /* Adjust size */
-    color: #007bff; /* Blue color */
-    position: absolute; /* Positioning */
-    top: -15px; /* Adjust vertical position */
-    left: 0; /* Align with the left border */
+.Donate h2{
+margin-left: 30px;
+margin-bottom: 15px;
+font-weight: bold;
+font-size: 50px;
+color: #2f4f2f;
 }
 
-/* Adding quotation mark after the content */
-.ServicesBottom h5:after {
-    content: close-quote; /* Unicode for close-quote */
-    font-size: 24px; /* Adjust size */
-    color: #007bff; /* Blue color */
-    position: absolute; /* Positioning */
-    bottom: -15px; /* Adjust vertical position */
-    right: 0; /* Align with the right border */
+.Donate h3{
+font-size: 30px;
+font-weight: 500;
+color:#3b5998;
+margin-left: 30px;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+.Donate p{
+margin-left: 30px;
+font-weight: 400;
+font-size: 18px;
 }
 
+
+.Dcontainer{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 25px;
+margin-top: 20px;
+min-height:100vh ;
+background-image: url(donationbackbanner.png);
+padding-bottom: 70px;
+}
+
+.Dcontainer form{
+padding: 20px;
+width: 700px;
+background: white;
+box-shadow: 0px 5px orangered;
+
+}
+
+.Dcontainer form .Drow{
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.Dcontainer form .Drow .Dcol{
+
+flex: 1 1 25px;
+}
+
+.Dcontainer form .Drow .Dcol h3{
+
+font-size: 20px;
+padding-bottom: 5px;
+text-transform: uppercase;
+}
+
+.Dinputbox{
+margin: 15px 0;
+}
+.Dinputbox p{
+margin-bottom:10px;
+display: block;
+
+}
+.Dinputbox input{
+width: 100%;
+border-radius: 10px;
+border:1px solid #ccc;
+padding: 10px 15px;
+font-size: 15px;
+
+}
+
+.Dflex{
+display:flex ;
+gap: 15px;
+}
+
+.Dflex .Dinputbox{
+margin-top: 5px;
+
+}
+
+.Dcontainer form .Drow .Dcol .Dinputbox img{
+height: 34PX;
+margin-top: 5px;
+filter: drop-shadow(0 0 1px yellowgreen);
+
+}
+.Dcontainer form .Dbutton{
+width: 100%;
+padding:12px;
+font-size: 18px;
+border-radius: 15px;
+background: #8fbc8f;
+margin-top: 5px;
+color: #3b5998;
+cursor: pointer;
+
+}
+.Dcontainer form .Dbutton:hover{
+background: #87ceeb;
+}
     </style>
 </head>
 <body>
-    <div class="nature-reserves">
-        <h1>Our Nature Reserves</h1>
-        <p>Together, The Wildlife Trusts care for 2,300 diverse and beautiful nature reserves where wildlife is protected and wild plants and animals thrive. These include ancient woodlands, lakes, meadows, stretches of river, urban parks, hills, heather-clad heathlands, marshes, and coastal habitats. Nearly all of our nature reserves are free to enter, and nearly all have public access to parts of the site.</p>
-    </div>
-    <div class="ServicesBottom">
-        <h5>Join us in our mission to protect and preserve wildlife for future generations. Together, we can make a difference. Explore our services and get involved today!</h5>  
-      </div>
+    <div class="Dcontainer">
+
+        <form action="">
+        
+        <div class="Drow">
+        
+        <div class="Dcol">
+        <h3>BILLING ADDRESS</h3>
+        
+        <div class="Dinputbox">
+        <p>Full Name</p>
+        <input type="text" placeholder="Your FUll Name">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>Full Name</p>
+        <input type="email" placeholder="Your Email Adress">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>Address</p>
+        <input type="text" placeholder="Your ADDRESS">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>City</p>
+        <input type="text" placeholder="Your city">
+        </div>
+        
+        <div class="Dflex">
+        <div class="Dinputbox">
+        <p>State</p>
+        <input type="text" placeholder="State">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>Postcode</p>
+        <input type="text" placeholder="Postcode">
+        </div>
+        
+        </div>
+        
+        </div>
+        <!--This will align form in column -->
+        
+        <div class="Dcol">
+        
+        <h3>Payment</h3>
+        
+        <div class="Dinputbox">
+        <p>Card Accepted</p>
+        <img src="card_img.png" alt="Card">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>Name On Card</p>
+        <input type="text" placeholder="Your Name On Card">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>Card Number</p>
+        <input type="Number" placeholder="Your Card Number">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>Exp Month</p>
+        <input type="Number" placeholder="expiry Month">
+        </div>
+        
+        <div class="Dflex">
+        <div class="Dinputbox">
+        <p>Expiary Year</p>
+        <input type="Number" placeholder="expiry Year">
+        </div>
+        
+        <div class="Dinputbox">
+        <p>CVV</p>
+        <input type="Number" placeholder="Your security code">
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        <input type="submit" value="Make Donation" class="Dbutton">
+        
+        </form>
+        
+        </div>
 </body>
 </html>

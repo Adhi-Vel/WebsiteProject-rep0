@@ -68,7 +68,28 @@ button {
   border-radius: 100px;
 }
 /* ------------------------------------------------------------ */
-
+.GetInvolvedCover {
+  height: 85vh;
+  background-image: url("GetInvolved.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.GetInvolvedCover h1 {
+  font-size: 85px;
+  color: black;
+}
+.MainContainer h1 {
+  font-size: 45px;
+}
+.MainContainer p{
+  font-size: 20px;
+}
 /* ------------------------------------------------------------ */
 div.footer-container {
   width: 100%;

@@ -67,11 +67,16 @@
   }
   /* -------------------------------------------------- */
   .AboutUsCover{
-    height: 85vh;
+    height: 85vh; 
     background-image: url("AboutusCover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
   }
   .AboutUsCovertext{
     position: absolute;

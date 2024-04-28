@@ -68,7 +68,7 @@ button {
 /* ----------------------------------- */
 .ServicesCoverpage{
   height: 85vh;
-  background-image: url("ServicesCover.jpg");
+  background-image: url("ServicesCover.avif");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; 
