@@ -70,7 +70,7 @@ button {
 /* ------------------------------------------------------------ */
 .ContactCover {
   height: 85vh;
-  background-image: url("ContactUs.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("ContactUs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -99,21 +99,28 @@ button {
 }
 .FormContainer {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  justify-content: center;
+  margin: 60px auto;
+}
+.ContactDetails, .ContactForm {
+  margin: 0 10px;
 }
 .ContactSection {
-  width: 45vw;
+  width: 35vw;
+  height: auto;
   padding: 40px;
   margin-bottom: 20px;
-  background-color: #072c3f;
+  background-color: #000f3c;
   border-radius: 15px;
-  line-height: 15px;
+  line-height: 1.5;
   color: #fff;
 }
+.ContactSection p{
+  text-align: right;
+  font-size: 20px;
+}
 .ContactForm {
-  max-width: 400px;
-  margin: 50px auto;
+  width: 35vw;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -129,6 +136,7 @@ h2 {
 label {
   display: block;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 input[type="text"],
 input[type="email"],

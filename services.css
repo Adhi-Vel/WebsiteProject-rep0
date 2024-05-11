@@ -69,6 +69,7 @@ button {
 .ServicesCoverpage{
   height: 85vh;
   background-image: url("ServicesCover.avif");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("ServicesCover.avif");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; 
@@ -77,6 +78,7 @@ button {
   align-items: center;
   justify-content: center;
   padding-left: 20px; 
+  color: ghostwhite;
 }
 .ServicesCoverpage h1{
   font-size: 55px;

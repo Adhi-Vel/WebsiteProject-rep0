@@ -70,7 +70,7 @@ button {
 /* ------------------------------------------------------------ */
 .GetInvolvedCover {
   height: 85vh;
-  background-image: url("GetInvolved.avif");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("GetInvolved.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,7 +82,7 @@ button {
 }
 .GetInvolvedCover h1 {
   font-size: 85px;
-  color: black;
+  color: ghostwhite;
 }
 .MainContainer h1 {
   font-size: 45px;
