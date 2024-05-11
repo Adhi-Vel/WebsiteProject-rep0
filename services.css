@@ -54,6 +54,7 @@ button {
 }
 .ButtonForDonate {
   padding: 10px;
+  width: 250px;
   background-color: #ff3c10;
   color: black;
   font-size: 20px;
@@ -65,10 +66,13 @@ button {
   display: inline-block;
   border-radius: 100px;
 }
+.ButtonForDonate:hover {
+  background: linear-gradient(to bottom, #ff3c10, #ffa710);
+  animation: button-particles 1s ease-in-out infinite;
+}
 /* ----------------------------------- */
 .ServicesCoverpage{
   height: 85vh;
-  background-image: url("ServicesCover.avif");
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("ServicesCover.avif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,9 +87,10 @@ button {
 .ServicesCoverpage h1{
   font-size: 55px;
   text-align: left;
+  text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
 }
 .ServicesCoverpage h2{
-  font-size: 45px;
+  font-size: 30px;
 }
 .ServicesQuoteContainer{
   display: flex;
@@ -131,7 +136,7 @@ button {
   text-align: center;
 }
 .Part1 h1,.Part2 h1,.Part3 h1,.Part4 h1,.Part5 h1,.Part6 h1{
-  font-size: 45px;
+  font-size: 30px;
   margin-bottom: 0px;
   padding: 10px;
   text-decoration: underline;
@@ -151,6 +156,9 @@ div.footer-container {
   background-color: #006c07;
   color: white;
 }
+.footer-container h3 {
+  font-size: 22px;
+}
 div.footer-container ul {
   list-style: none;
 }
@@ -162,6 +170,7 @@ div.footer-container ul li a {
   text-decoration: none;
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 div.footer-container ul li a img {
   margin-right: 10px;

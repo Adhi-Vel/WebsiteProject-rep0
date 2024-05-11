@@ -56,6 +56,7 @@ button {
 }
 .ButtonForDonate {
   padding: 10px;
+  width: 250px;
   background-color: #ff3c10;
   color: black;
   font-size: 20px;
@@ -67,28 +68,65 @@ button {
   display: inline-block;
   border-radius: 100px;
 }
+.ButtonForDonate:hover {
+  background: linear-gradient(to bottom, #ff3c10, #ffa710);
+  animation: button-particles 1s ease-in-out infinite;
+}
 /* ------------------------------------------------------------ */
 .GetInvolvedCover {
   height: 85vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("GetInvolved.avif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("GetInvolved.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-left: 20px;
 }
 .GetInvolvedCover h1 {
   font-size: 85px;
   color: ghostwhite;
+  text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
+}
+.MainContainer {
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
 .MainContainer h1 {
-  font-size: 45px;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding: 10px;
+  text-decoration: underline;
 }
-.MainContainer p{
+.MainContainer p {
   font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #ff3c10;
+  padding: 14px 40px;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  border: 2px dashed #ff3c10;
+  transition: 0.4s;
+}
+.btn a{
+  text-decoration: none;
+  color: inherit; 
+}
+.btn:hover {
+  transition: 0.4s;
+  border: 2px dashed #ff3c10;
+  background-color: #fff;
+  color: #ff3c10;
 }
 /* ------------------------------------------------------------ */
 div.footer-container {

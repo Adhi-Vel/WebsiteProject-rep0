@@ -1,0 +1,265 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+div.header-container {
+  width: 100%;
+  height: 112px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000f3c;
+}
+div.logo {
+  float: left;
+  height: 72px;
+  width: 300px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+nav a {
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 20px;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: aqua;
+  transition: width 0.3s ease;
+}
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
+}
+/* ul:hover li:not(:hover){
+  filter: blur(0.5px); 
+} */
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+.ButtonForDonate {
+  padding: 10px;
+  width: 250px;
+  background-color: #ff3c10;
+  color: black;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  display: inline-block;
+  border-radius: 100px;
+}
+.ButtonForDonate:hover {
+  background: linear-gradient(to bottom, #ff3c10, #ffa710);
+  animation: button-particles 1s ease-in-out infinite;
+}
+/* ------------------------------------------------------------------- */
+.DonationCover {
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("DonationCover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
+}
+.DonationCover h1 {
+  position: absolute;
+  top: 28vh;
+  left: vw; 
+  padding: 10px;
+  color: white;
+}
+.DonateContent{
+  margin-top: 20px;
+}
+.DonateContent h1 {
+  border-bottom: 5px solid black;
+  padding-bottom: 2px;
+  width: 418px;
+  margin: 20px auto;
+  font-size: 40px;
+}
+.DonateContent p {
+  font-size: 20px;
+  line-height: 1.3;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.DonateList{
+  width: 70vw;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+.DonateList h3{
+  margin-bottom: 10px;
+  text-align: left;
+}
+.DonateList li, .DonateList strong {
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+}
+.DonateMaster {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.DonateForm {
+  margin: 0 20px;
+}
+.DonateForm h2 {
+  text-align: center;
+}
+.DonateForm form {
+  width: 30vw;
+  height: 60vh;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.DonateForm div:first-child {
+  margin-bottom: 60px;
+}
+.DonateForm div:last-child{
+  margin-bottom: 0;
+}
+.DonateForm label {
+  font-size: 20px;
+}
+.DonateForm select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.DonateForm button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 160px;
+  border: none;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.DonateForm a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+.DonateForm button:hover {
+  background-color: #45a049;
+}
+.ExtraPart {
+  background-color: #000f3c;
+  color: ghostwhite;
+  width: 30vw;
+  height: 60vh;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+.ExtraPart h1{
+  font-size: 30px;
+}
+.ExtraPart li{
+  list-style: none;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.ExtraPart strong {
+  font-size: 20px;
+  text-decoration-line: underline;
+}
+.ExtraPart p {
+  font-size: 20px;
+}
+.DonateOther{
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+.DonateOther p{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+/* ------------------------------------------------------------------- */
+div.footer-container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #006c07;
+  color: white;
+}
+.footer-container h3 {
+  font-size: 22px;
+}
+div.footer-container ul {
+  list-style: none;
+}
+div.footer-container ul li {
+  margin-bottom: 10px;
+}
+div.footer-container ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+div.footer-container ul li a img {
+  margin-right: 10px;
+}
+div.footer-container ul li a:hover {
+  text-shadow: 0 0 5px white;
+}
+.newsletter form {
+  display: flex;
+}
+.newsletter input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+}
+.newsletter button {
+  padding: 8px 20px;
+  background-color: #c8fc4f;
+  color: #173803;
+  border: none;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #d4f588;
+}
+.copyright {
+  background-image: none;
+  text-align: center;
+  margin-top: 20px;
+}

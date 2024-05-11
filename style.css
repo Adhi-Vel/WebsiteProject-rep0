@@ -31,10 +31,6 @@ nav a {
   color: yellowgreen;
   font-size: 20px;
 }
-nav a:hover,
-nav a:focus {
-  color: yellowgreen;
-}
 nav a::after {
   content: "";
   position: absolute;
@@ -71,19 +67,25 @@ button {
   display: inline-block;
   border-radius: 100px;
 }
+.ButtonForDonate:hover {
+  background: linear-gradient(to bottom, #ff3c10, #ffa710);
+  animation: button-particles 1s ease-in-out infinite;
+}
 /* ---------------------------------- */
-main{
+main {
   background-color: #000f3c;
 }
 .coverpage {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("Waterfall.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Waterfall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   height: 85vh;
-  padding: 200px 100px; 
+  padding: 200px 100px;
   text-align: center;
   color: white;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 @keyframes flyInFromLeft {
   from {
@@ -111,10 +113,10 @@ main{
 .BelowCoverpage h1 {
   border-bottom: 5px solid black;
   padding-bottom: 2px;
-  width: 250px;
+  width: 310px;
   margin: 20px auto;
 }
-.BelowCoverpage p{
+.BelowCoverpage p {
   line-height: 1.2;
 }
 .BelowCoverpage button {
@@ -171,7 +173,7 @@ main{
   border-left: 2px solid white;
   height: 70vh;
   transition: all 0.5s ease, opacity 0.2s ease;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   backface-visibility: visible;
 }
 .carousel-container ul li img {
@@ -199,7 +201,7 @@ main{
 .carousel-container ul li:hover .CarouselTitle {
   height: 100%;
   background-color: rgba(89, 89, 89, 0.4);
-}  
+}
 .carousel-container ul li:hover .CarouselTitle p {
   opacity: 1;
   width: 30vw;
@@ -228,7 +230,7 @@ main{
   margin: 20px auto;
   width: 80vw;
 }
-.insights section{
+.insights section {
   width: 25vw;
   padding: auto 20px;
 }
@@ -239,7 +241,7 @@ main{
   border-bottom: 5px solid white;
 }
 .insights p {
-  border: 1px solid rgba(255, 255, 255, .5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   color: whitesmoke;
   font-size: 18px;
   text-align: center;
@@ -252,8 +254,8 @@ main{
   margin: 0 auto;
   background-color: white;
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .lastpart h1 {
@@ -264,7 +266,7 @@ main{
   display: inline-block;
   font-size: 30px;
 }
-.lastpart p{
+.lastpart p {
   width: 50vw;
   line-height: 1.5;
   font-size: 20px;
@@ -273,15 +275,15 @@ main{
 .lastpart h6 {
   margin-top: 20px;
   font-size: 20px;
-  display: inline-block;  
+  display: inline-block;
 }
-.lastpart a{
+.lastpart a {
   font-size: 18px;
   text-decoration: none;
   color: white;
 }
 .arrowbutton {
-  --primary-color: black ;
+  --primary-color: black;
   --secondary-color: #fff;
   --hover-color: #ff3c10;
   --arrow-width: 10px;

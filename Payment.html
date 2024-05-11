@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="Payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="WildLife Unity.png" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="GetInvolved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button>
+          <a href="donation.html" class="ButtonForDonate">Donate</a>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="PaymentContainer">
+        <div class="Part1">
+        <h1>Make a Donation</h1>
+        <form class="DonationForm" action="#" method="post">
+          <div class="h1">Billing Address</div>
+          <div class="form-group">
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name"required/>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email Address"required/>
+          </div>
+          <div class="form-group">
+            <input type="text" id="address" name="address" placeholder="Address" required/>
+          </div>
+          <div class="form-group">
+            <input type="text" id="city"
+              name="city" placeholder="City" required/>
+          </div>
+          <div class="form-group">
+            <input type="text" id="state" name="state" placeholder="State" required/>
+          </div>
+          <div class="form-group">
+            <input type="text" id="postcode" name="postcode" placeholder="Post Code" required/>
+          </div>
+        </div>
+<!-- ----------------------------------------------------------------- -->
+        <div class="Part2">
+          <div class="section-heading">Payment Details</div>
+          <div class="form-group">
+            <input type="text" id="cardname" name="cardname" placeholder="Name on Card" required/>
+          </div>
+          <div class="form-group">
+            <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number" required/>
+          </div>
+          <div class="form-group">
+            <div class="expiry-cvv">
+              <input type="text" id="expmonth" name="expmonth" placeholder="Exp. Month" required/>
+              <input type="text" id="expyear" name="expyear" placeholder="Exp. Year" required/>
+              <input type="text" id="cvv"
+                name="cvv" placeholder="CVV" required/>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+      <button type="submit">Donate Now</button>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="legals">
+          <h3>Legal Information</h3>
+          <br />
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <h3>Connect with Us</h3>
+          <br />
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Join Our Community</h3>
+          <br />
+          <p>Stay informed about wildlife conservation efforts:</p>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2024 Wildlife Conservation Organization. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

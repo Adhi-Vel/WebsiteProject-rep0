@@ -2,17 +2,21 @@
 <html>
   <head>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="donation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="script.js" async></script>
   </head>
   <body>
     <header>
       <div class="header-container">
         <div class="logo">
-          <!-- <h3>Wildlife</h3>
-          <h3>unity</h3> -->
-          <img src="WildLife Unity.png">
+          <img src="WildLife Unity.png" />
         </div>
         <nav>
           <ul>
@@ -29,7 +33,124 @@
       </div>
     </header>
     <main>
-        This is the About Us
+      <div class="DonationCover">
+        <h1 style="font-size: 55px">Make A Donation</h1>
+      </div>
+      <div class="DonateContent">
+        <h1>Donate to Wildlife Unity</h1>
+        <p>
+          At Wildlife Unity, we are dedicated to protecting and preserving the
+          world's precious wildlife. Our mission is to ensure a future where
+          every species can thrive in its natural habitat. But we can't do it
+          alone - we need your support.
+        </p>
+        <p>
+          Your donation to Wildlife Unity will directly contribute to vital
+          conservation efforts across the globe. Whether it's safeguarding
+          endangered species, restoring habitats, or combating illegal wildlife
+          trade, every contribution makes a difference.
+        </p>
+        <div class="DonateList">
+          <h3 style="font-size: 22px">Here's how your donation can help:</h3>
+          <ol>
+            <li>
+              <strong>Species Conservation:</strong> Your support enables us to
+              implement targeted conservation projects for endangered species,
+              ensuring their survival for generations to come.
+            </li>
+            <li>
+              <strong>Habitat Restoration:</strong> By restoring and protecting
+              natural habitats, we create safe spaces for wildlife to thrive and
+              promote biodiversity conservation.
+            </li>
+            <li>
+              <strong>Community Engagement:</strong> We work closely with local
+              communities to foster sustainable practices that benefit both
+              people and wildlife, promoting coexistence and harmony.
+            </li>
+            <li>
+              <strong>Anti-Poaching Initiatives:</strong> Your donation helps us
+              fund anti-poaching efforts, preventing the illegal trade of
+              wildlife and safeguarding vulnerable species from exploitation.
+            </li>
+            <li>
+              <strong>Education and Awareness:</strong> We believe in the power
+              of education to inspire positive change. Your support allows us to
+              educate communities and raise awareness about the importance of
+              wildlife conservation.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="DonateMaster">
+        <div class="DonateForm">
+          <form>
+            <div>
+              <label for="donation-type">Choose Donation Type:</label>
+              <select>
+                <option value="give-once">Give Once</option>
+                <option value="give-monthly">Give Monthly</option>
+              </select>
+            </div>
+            <div>
+              <label for="amount">Choose Amount:</label>
+              <select>
+                <optgroup label="Choose Below">
+                  <option value="5">£5</option>
+                  <option value="10">£10</option>
+                  <option value="20">£20</option>
+                  <option value="35">£35</option>
+                  <option value="65">£65</option>
+                  <option value="100">£100</option>
+                </optgroup>
+              </select>
+            </div>
+              <button type="submit">
+                <a href="Payment.html">Proceed to Payment</a>
+              </button>
+          </form>
+        </div>
+        <div class="ExtraPart">
+          <h1>Alternate ways to donate</h1>
+          <br />
+          <p>
+            If you prefer to donate through alternative methods, we offer the
+            following options:
+          </p>
+          <br />
+          <ul>
+            <li>
+              <strong>Bank Transfer:</strong> You can make a direct bank
+              transfer to our account. Contact us for details.
+            </li>
+            <li>
+              <strong>Mail:</strong> Send a check or money order to our mailing
+              address. Please make it payable to Wildlife Unity.
+            </li>
+            <li>
+              <strong>Online Payment Platforms:</strong> Donate through online
+              payment platforms such as PayPal or GoFundMe. Look for our profile
+              under Wildlife Unity.
+            </li>
+          </ul>
+          <br />
+          <p>
+            Your contribution, regardless of the method, will make a meaningful
+            impact on our conservation efforts. Thank you for your generosity!
+          </p>
+        </div>
+      </div>
+      <div class="DonateOther">
+        <p>
+          Every donation, no matter the size, contributes to our collective
+          efforts to protect wildlife and preserve our planet's natural
+          heritage. Together, we can make a difference.
+        </p>
+        <p>
+          Join us in our mission to create a world where wildlife thrives.
+          Donate today and be a part of the Wildlife Unity movement.<br> Together, we can make a difference. Thank you for your support!
+        </p>
+      </div>
     </main>
     <footer>
       <div class="footer-container">
@@ -50,10 +171,14 @@
               <a href="#"><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a>
+              <a href="#"
+                ><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a
+              >
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-instagram" ></i>&nbsp;Instagram</a>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a
+              >
             </li>
           </ul>
         </div>

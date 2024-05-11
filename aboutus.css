@@ -1,183 +1,217 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-size: 1rem;
-  }
-  div.header-container {
-    width: 100%;
-    height: 112px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000f3c;
-  }
-  div.logo{
-    float: left;
-    height: 72px;
-    width: 300px;
-  }
-  nav ul {
-    display: flex;
-    gap: 50px;
-  }
-  nav ul li {
-    list-style: none;
-    position: relative;
-  }
-  nav a {
-    text-decoration: none;
-    color: yellowgreen;
-    font-size: 20px;
-  }
-  nav a:hover, nav a:focus {
-    color: yellowgreen;
-  }
-  nav a::after {
-    content: '';
-    position: absolute;
-    bottom: -33px;
-    left: 0;
-    width: 0;
-    height: 5px;
-    background-color: aqua; 
-    transition: width 0.3s ease; 
-  }
-  nav a:hover::after, nav a:focus::after {
-    width: 100%;
-  }
-  button {
-    border: none;
-    background-color: transparent;
-    font-family: inherit;
-  }
-  .ButtonForDonate {
-    padding: 10px;
-    background-color: #ff3c10;
-    color: black;
-    font-size: 20px;
-    font-family: inherit;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 100px;
-    display: inline-block;
-    border-radius: 100px;
-  }
-  /* -------------------------------------------------- */
-  .AboutUsCover{
-    height: 85vh; 
-    background-image: url("AboutusCover.jpg");
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("AboutusCover.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-  }
-  .AboutUsCovertext{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vh;
-    height: 50vh; 
-    background-color: antiquewhite;
-    padding: 50px;
-    border-top-right-radius: 90px
-  }
-  .AboutUsCovertext h1{
-    font-size: 55px;
-    color: #20201D;
-  }
-  .AboutUsCovertext p{
-    font-size: 20px;
-  }
-  .AboutUsSlot1,.AboutUsSlot2,.AboutUsSlot3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px;
-    gap: 40px;
-  }
-  .AboutUsContents h1{
-    font-size: 50px;
-  }
-  .AboutUsContents p{
-    font-size: 20px;
-  }
-  .Textslot1, .Textslot2, .Textslot3, .ImageSlot1, .ImageSlot2 ,.ImageSlot3{
-    height: 60vh;
-    width: 35vw;
-    padding: 40px;
-    border: 1px solid black;
-  }
-  .AboutUsLastH{
-    background-color: aqua;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .AboutUsLast{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+div.header-container {
+  width: 100%;
+  height: 112px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000f3c;
+}
+div.logo {
+  float: left;
+  height: 72px;
+  width: 300px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+nav a {
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 20px;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: aqua;
+  transition: width 0.3s ease;
+}
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+.ButtonForDonate {
+  padding: 10px;
+  width: 250px;
+  background-color: #ff3c10;
+  color: black;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  display: inline-block;
+  border-radius: 100px;
+}
+.ButtonForDonate:hover {
+  background: linear-gradient(to bottom, #ff3c10, #ffa710);
+  animation: button-particles 1s ease-in-out infinite;
+}
+/* -------------------------------------------------- */
+main {
+  background-color: #000f3c;
+}
+.AboutUsCover {
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("AboutusCover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
+}
+.AboutUsCovertext {
+  padding: 30px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+.AboutUsCovertext h1 {
+  border-bottom: 5px solid black;
+  padding-bottom: 2px;
+  width: 350px;
+  margin: 20px auto;
+  font-size: 40px;
+}
+.AboutUsCovertext p {
+  font-size: 20px;
+  line-height: 1.3;
+  width: 700px;
+  margin: 0 auto;
+}
+.AboutUsSlot1,
+.AboutUsSlot2,
+.AboutUsSlot3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  gap: 40px;
+}
+.AboutUsContents h1 {
+  font-size: 40px;
+  color: ghostwhite;
+}
+.AboutUsContents p {
+  font-size: 20px;
+  color: ghostwhite;
+}
+.Textslot1,
+.Textslot2,
+.Textslot3,
+.ImageSlot1,
+.ImageSlot2,
+.ImageSlot3 {
+  height: 60vh;
+  width: 35vw;
+  padding: 40px;
+  border: 1px solid aqua;
+}
+.AboutUsLast {
+  background-color: white;
   padding: 20px;
   padding-bottom: 0px;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 40px auto;
 }
-
-  /* -------------------------------------------------- */
-  div.footer-container {
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #006c07;
-    color: white;
-  }
-  div.footer-container ul {
-    list-style: none;
-  }
-  div.footer-container ul li {
-    margin-bottom: 10px;
-  }
-  div.footer-container ul li a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
-  div.footer-container ul li a img {
-    margin-right: 10px;
-  }
-  div.footer-container ul li a:hover {
-    text-shadow: 0 0 5px white;
-  }
-  .newsletter form {
-    display: flex;
-  }
-  .newsletter input {
-    flex: 1;
-    padding: 5px;
-    border: none;
-  }
-  .newsletter button {
-    padding: 8px 20px;
-    background-color: #c8fc4f;
-    color: #173803;
-    border: none;
-    cursor: pointer;
-  }
-  .newsletter button:hover {
-    background-color: #d4f588;
-  }
-  .copyright {
-    background-image: none;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+.AboutUsLast h1 {
+  border-bottom: 5px solid black;
+  padding-bottom: 2px;
+  width: 270px;
+  margin: 20px auto;
+  color: black;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AboutUsLast p{
+  font-size: 20px;
+  line-height: 1.3;
+  width: 700px;
+  margin: 0 auto;
+}
+/* -------------------------------------------------- */
+div.footer-container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #006c07;
+  color: white;
+}
+.footer-container h3 {
+  font-size: 22px;
+}
+div.footer-container ul {
+  list-style: none;
+}
+div.footer-container ul li {
+  margin-bottom: 10px;
+}
+div.footer-container ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+div.footer-container ul li a img {
+  margin-right: 10px;
+}
+div.footer-container ul li a:hover {
+  text-shadow: 0 0 5px white;
+}
+.newsletter form {
+  display: flex;
+}
+.newsletter input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+}
+.newsletter button {
+  padding: 8px 20px;
+  background-color: #c8fc4f;
+  color: #173803;
+  border: none;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #d4f588;
+}
+.copyright {
+  background-image: none;
+  text-align: center;
+  margin-top: 20px;
+}
