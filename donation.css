@@ -28,7 +28,7 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: yellowgreen;
+  color: #00ff00;
   font-size: 20px;
 }
 nav a::after {
@@ -45,9 +45,6 @@ nav a:hover::after,
 nav a:focus::after {
   width: 100%;
 }
-/* ul:hover li:not(:hover){
-  filter: blur(0.5px); 
-} */
 button {
   border: none;
   background-color: transparent;

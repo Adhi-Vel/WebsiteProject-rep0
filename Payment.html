@@ -34,51 +34,114 @@
     </header>
     <main>
       <div class="PaymentContainer">
-        <div class="Part1">
         <h1>Make a Donation</h1>
-        <form class="DonationForm" action="#" method="post">
-          <div class="h1">Billing Address</div>
-          <div class="form-group">
-            <input type="text" id="fullname" name="fullname" placeholder="Full Name"required/>
+        <div class="DonationWrapper">
+          <div class="Part1">
+            <form class="DonationForm">
+              <div class="Heading">Billing Address</div>
+              <div class="InputClass">
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="InputClass">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="InputClass">
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+              <div class="InputClass">
+                <div class="SideInput">
+                  <input type="text" name="city" placeholder="City" required />
+                  <input
+                    type="text"
+                    name="state"
+                    placeholder="State"
+                    required
+                  />
+                </div>
+                <div class="SideInput">
+                  <input
+                    type="text"
+                    name="country"
+                    placeholder="Country"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    placeholder="Post Code"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Email Address"required/>
-          </div>
-          <div class="form-group">
-            <input type="text" id="address" name="address" placeholder="Address" required/>
-          </div>
-          <div class="form-group">
-            <input type="text" id="city"
-              name="city" placeholder="City" required/>
-          </div>
-          <div class="form-group">
-            <input type="text" id="state" name="state" placeholder="State" required/>
-          </div>
-          <div class="form-group">
-            <input type="text" id="postcode" name="postcode" placeholder="Post Code" required/>
+          <div class="Part2">
+            <form class="DonationForm">
+              <div class="Heading">Payment Details</div>
+              <div class="DisplayClass">
+                <input
+                  type="text"
+                  name="cards"
+                  placeholder="Cards Accepted"
+                  readonly
+                  required
+                />
+                <input type="image" src="card_img.png" alt="Cards Accepted" />
+              </div>
+              <div class="InputClass">
+                <input
+                  type="text"
+                  name="cardname"
+                  placeholder="Name on Card"
+                  required
+                />
+              </div>
+              <div class="InputClass">
+                <input
+                  type="text"
+                  name="cardnumber"
+                  placeholder="Card Number"
+                  required
+                />
+              </div>
+              <div class="InputClass">
+                <div class="SideInput">
+                  <input
+                    type="text"
+                    name="expmonth"
+                    placeholder="Exp. Month"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="expyear"
+                    placeholder="Exp. Year"
+                    required
+                  />
+                </div>
+                <input type="text" name="cvv" placeholder="CVV" required />
+              </div>
+            </form>
           </div>
         </div>
-<!-- ----------------------------------------------------------------- -->
-        <div class="Part2">
-          <div class="section-heading">Payment Details</div>
-          <div class="form-group">
-            <input type="text" id="cardname" name="cardname" placeholder="Name on Card" required/>
-          </div>
-          <div class="form-group">
-            <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number" required/>
-          </div>
-          <div class="form-group">
-            <div class="expiry-cvv">
-              <input type="text" id="expmonth" name="expmonth" placeholder="Exp. Month" required/>
-              <input type="text" id="expyear" name="expyear" placeholder="Exp. Year" required/>
-              <input type="text" id="cvv"
-                name="cvv" placeholder="CVV" required/>
-            </div>
-          </div>
-        </div>
-        </form>
+        <button class="Submit">Donate Now</button>
       </div>
-      <button type="submit">Donate Now</button>
     </main>
     <footer>
       <div class="footer-container">
@@ -86,9 +149,9 @@
           <h3>Legal Information</h3>
           <br />
           <ul>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="UnderMaintanence.html">Terms of Use</a></li>
+            <li><a href="UnderMaintanence.html">Privacy Policy</a></li>
+            <li><a href="UnderMaintanence.html">Cookie Policy</a></li>
           </ul>
         </div>
         <div class="socials">
@@ -96,15 +159,15 @@
           <br />
           <ul>
             <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+              <a href="UnderMaintanence.html"><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
             </li>
             <li>
-              <a href="#"
+              <a href="UnderMaintanence.html"
                 ><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a
               >
             </li>
             <li>
-              <a href="#"
+              <a href="UnderMaintanence.html"
                 ><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a
               >
             </li>
@@ -113,10 +176,12 @@
         <div class="newsletter">
           <h3>Join Our Community</h3>
           <br />
-          <p>Stay informed about wildlife conservation efforts:</p>
+          <p style="font-size: 18px">
+            Stay informed about wildlife conservation efforts:
+          </p>
           <form>
             <input type="email" placeholder="Enter your email" />
-            <button type="submit">Subscribe</button>
+            <button type="submit" style="font-size: 16px">Subscribe</button>
           </form>
         </div>
       </div>

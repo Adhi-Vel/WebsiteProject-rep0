@@ -1,40 +1,19 @@
-// alert("Blah blah")
-const navigation =`
-<ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Services</li>
-    <li>Contact Us</li>
-</ul>`
-const nav = document.createElement("nav");
-nav.innerHTML = navigation;
-document.querySelector("header").appens(nav);
+  var donateButton = document.querySelector(".Submit");
 
-
-let currentIndex = 1;
-const slides = document.querySelectorAll('.rectangle');
-const totalSlides = slides.length;
-const slideWidth = 120; // Adjust based on rectangle width + margin
-let clickCount = 0;
-
-function moveCarousel(direction) {
-  currentIndex += direction;
-  clickCount++;
-
-  if (currentIndex < 1) {
-    currentIndex = totalSlides;
-    document.querySelector('.carousel').style.transform = `translateX(${-totalSlides * slideWidth}px)`;
-  } else if (currentIndex > totalSlides) {
-    currentIndex = 1;
-    document.querySelector('.carousel').style.transform = 'translateX(0)';
-  } else {
-    const offset = -(currentIndex - 1) * slideWidth;
-    document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
-  }
-
-  if (clickCount >= 3) {
-    currentIndex = 1;
-    document.querySelector('.carousel').style.transform = 'translateX(0)';
-    clickCount = 0;
-  }
-}
+  donateButton.addEventListener("click", function(event) {
+    event.preventDefault(); 
+    var fullName = document.querySelector('input[name="fullname"]').value;
+    var email = document.querySelector('input[name="email"]').value;
+    var address = document.querySelector('input[name="address"]').value;
+    var city = document.querySelector('input[name="city"]').value;
+    var state = document.querySelector('input[name="state"]').value;
+    var country = document.querySelector('input[name="country"]').value;
+    var postcode = document.querySelector('input[name="postcode"]').value;
+    var cardName = document.querySelector('input[name="cardname"]').value;
+    var cardNumber = document.querySelector('input[name="cardnumber"]').value;
+    var expMonth = document.querySelector('input[name="expmonth"]').value;
+    var expYear = document.querySelector('input[name="expyear"]').value;
+    var cvv = document.querySelector('input[name="cvv"]').value;
+    alert("Thank you " + fullName + ", for your donation!");  
+  });
+//

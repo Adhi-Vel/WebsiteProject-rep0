@@ -28,12 +28,8 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: yellowgreen;
+  color: #00ff00;
   font-size: 20px;
-}
-nav a:hover,
-nav a:focus {
-  color: yellowgreen;
 }
 nav a::after {
   content: "";
@@ -118,9 +114,9 @@ button {
   border: 2px dashed #ff3c10;
   transition: 0.4s;
 }
-.btn a{
+.btn a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 .btn:hover {
   transition: 0.4s;

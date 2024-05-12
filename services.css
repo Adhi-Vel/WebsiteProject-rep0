@@ -13,7 +13,7 @@ div.header-container {
   justify-content: space-between;
   background-color: #000f3c;
 }
-div.logo{
+div.logo {
   float: left;
   height: 72px;
   width: 300px;
@@ -28,23 +28,21 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: yellowgreen;
+  color: #00ff00;
   font-size: 20px;
 }
-nav a:hover, nav a:focus {
-  color: yellowgreen;
-}
 nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -33px;
   left: 0;
   width: 0;
   height: 5px;
-  background-color: aqua; 
-  transition: width 0.3s ease; 
+  background-color: aqua;
+  transition: width 0.3s ease;
 }
-nav a:hover::after, nav a:focus::after {
+nav a:hover::after,
+nav a:focus::after {
   width: 100%;
 }
 button {
@@ -71,28 +69,29 @@ button {
   animation: button-particles 1s ease-in-out infinite;
 }
 /* ----------------------------------- */
-.ServicesCoverpage{
+.ServicesCoverpage {
   height: 85vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("ServicesCover.avif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("ServicesCover.avif");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 20px; 
+  padding-left: 20px;
   color: ghostwhite;
 }
-.ServicesCoverpage h1{
-  font-size: 55px;
+.ServicesCoverpage h1 {
+  font-size: 85px;
   text-align: left;
   text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
 }
-.ServicesCoverpage h2{
-  font-size: 30px;
+.ServicesCoverpage h2 {
+  font-size: 35px;
 }
-.ServicesQuoteContainer{
+.ServicesQuoteContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,16 +134,62 @@ button {
   padding: 20px;
   text-align: center;
 }
-.Part1 h1,.Part2 h1,.Part3 h1,.Part4 h1,.Part5 h1,.Part6 h1{
+.Part1 h1,
+.Part2 h1,
+.Part3 h1,
+.Part4 h1,
+.Part5 h1,
+.Part6 h1 {
   font-size: 30px;
   margin-bottom: 0px;
   padding: 10px;
   text-decoration: underline;
 }
-.Part1 p,.Part2 p,.Part3 p,.Part4 p,.Part5 p,.Part6 p{
+.Part1 p,
+.Part2 p,
+.Part3 p,
+.Part4 p,
+.Part5 p,
+.Part6 p {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+.ImpactReport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+caption {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+th {
+  background-color: #f2f2f2;
+  font-size: 22px;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tbody tr:hover {
+  background-color: #e0e0e0;
 }
 /* ----------------------------------- */
 div.footer-container {

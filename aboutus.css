@@ -28,7 +28,7 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: yellowgreen;
+  color: #00ff00;
   font-size: 20px;
 }
 nav a::after {
@@ -154,7 +154,7 @@ main {
   align-items: center;
   justify-content: center;
 }
-.AboutUsLast p{
+.AboutUsLast p {
   font-size: 20px;
   line-height: 1.3;
   width: 700px;

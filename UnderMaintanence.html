@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" async></script>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-size: 1rem;
+      }
+      div.header-container {
+        width: 100%;
+        height: 112px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #000f3c;
+      }
+      div.logo {
+        float: left;
+        height: 72px;
+        width: 300px;
+      }
+      nav ul {
+        display: flex;
+        gap: 50px;
+      }
+      nav ul li {
+        list-style: none;
+        position: relative;
+      }
+      nav a {
+        text-decoration: none;
+        color: #00ff00;
+        font-size: 20px;
+      }
+      nav a::after {
+        content: "";
+        position: absolute;
+        bottom: -33px;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background-color: aqua;
+        transition: width 0.3s ease;
+      }
+      nav a:hover::after,
+      nav a:focus::after {
+        width: 100%;
+      }
+      button {
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+      }
+      .ButtonForDonate {
+        padding: 10px;
+        width: 250px;
+        background-color: #ff3c10;
+        color: black;
+        font-size: 20px;
+        font-family: inherit;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 100px;
+        display: inline-block;
+        border-radius: 100px;
+      }
+      .ButtonForDonate:hover {
+        background: linear-gradient(to bottom, #ff3c10, #ffa710);
+        animation: button-particles 1s ease-in-out infinite;
+      }
+      /* ----------------------------------------------------------------------- */
+      .MaintenanceCover {
+        height: 85vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("Maintenance.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      /* ----------------------------------------------------------------------- */
+      div.footer-container {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #006c07;
+        color: white;
+      }
+      .footer-container h3 {
+        font-size: 22px;
+      }
+      div.footer-container ul {
+        list-style: none;
+      }
+      div.footer-container ul li {
+        margin-bottom: 10px;
+      }
+      div.footer-container ul li a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+      }
+      div.footer-container ul li a img {
+        margin-right: 10px;
+      }
+      div.footer-container ul li a:hover {
+        text-shadow: 0 0 5px white;
+      }
+      .newsletter form {
+        display: flex;
+      }
+      .newsletter input {
+        flex: 1;
+        padding: 5px;
+        border: none;
+        border-radius: 0;
+      }
+      .newsletter button {
+        padding: 8px 20px;
+        background-color: #c8fc4f;
+        color: #173803;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+      }
+      .newsletter button:hover {
+        background-color: #d4f588;
+      }
+      .copyright {
+        background-image: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="WildLife Unity.png" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="GetInvolved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button>
+          <a href="donation.html" class="ButtonForDonate">Donate</a>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="MaintenanceCover"></div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="legals">
+          <h3>Legal Information</h3>
+          <br />
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <h3>Connect with Us</h3>
+          <br />
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Join Our Community</h3>
+          <br />
+          <p>Stay informed about wildlife conservation efforts:</p>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2024 Wildlife Conservation Organization. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

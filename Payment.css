@@ -28,7 +28,7 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: yellowgreen;
+  color: #00ff00;
   font-size: 20px;
 }
 nav a::after {
@@ -71,31 +71,57 @@ button {
 /* -------------------------------------------------- */
 .PaymentContainer {
   display: flex;
-  justify-content: center;
-}
-.Part1, .Part2 {
-  width: 40vw;
-  margin: 0 auto;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
 }
-.Part1 h1{
+.DonationWrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60vw;
+}
+.Part1, .Part2 {
+  width: 40vw;
+  margin: 0 20px;
+}
+.PaymentContainer h1{
   margin-bottom: 20px;
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 .DonationForm {
   display: flex;
   flex-direction: column;
 }
-.h1 {
-  font-size: 18px;
-  font-weight: bold;
+.Heading {
+  font-size: 22px;
   margin: 20px 0 10px;
 }
-.form-group {
+.InputClass {
   margin-bottom: 20px;
+}
+.DisplayClass {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.DisplayClass input[type="text"]{
+  flex: 1;
+  margin-right: 5px;
+}
+.DisplayClass p {
+  font-size: 18px;
+  margin-right: 20px;
+  color: grey; 
+}
+.DisplayClass img{
+  width: auto ;
 }
 input[type="text"],
 input[type="email"] {
@@ -111,19 +137,22 @@ input[type="email"]:focus {
   border-color: #007bff;
   outline: none;
 }
-.expiry-cvv input {
+.SideInput input {
   width: calc(33.33% - 5px);
+  margin-bottom: 20px;
 }
-button[type="submit"] {
+.Submit{
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
+  font-size: 20px;
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 30%;
 }
-button[type="submit"]:hover {
+.Submit:hover {
   background-color: #0056b3;
 }
 /* -------------------------------------------------- */
@@ -165,12 +194,14 @@ div.footer-container ul li a:hover {
   flex: 1;
   padding: 5px;
   border: none;
+  border-radius: 0;
 }
 .newsletter button {
   padding: 8px 20px;
   background-color: #c8fc4f;
   color: #173803;
   border: none;
+  border-radius: 0;
   cursor: pointer;
 }
 .newsletter button:hover {
