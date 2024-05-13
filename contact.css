@@ -69,6 +69,7 @@ button {
   animation: button-particles 1s ease-in-out infinite;
 }
 /* ------------------------------------------------------------ */
+/* Styling for the cover section */
 .ContactCover {
   height: 85vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -82,7 +83,7 @@ button {
   justify-content: center;
   padding-left: 20px;
 }
-
+/* Styling for sections containing contact information and form */
 .Contact,
 .Information {
   display: flex;
@@ -91,6 +92,7 @@ button {
   text-align: left;
   text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
 }
+/* Styling for headings within contact and information sections */
 .Contact h1,
 .Information h1 {
   font-size: 85px;
@@ -143,11 +145,13 @@ button {
   font-size: 25px;
   width: 70vw;
 }
+/* Styling for the form container */
 .FormContainer {
   display: flex;
   justify-content: center;
   margin: 40px auto;
 }
+/* Styling for contact details and contact form */
 .ContactDetails,
 .ContactForm {
   margin: 0 10px;
@@ -180,11 +184,13 @@ h2 {
 .form-group {
   margin-bottom: 20px;
 }
+/* Styling for labels */
 label {
   display: block;
   margin-bottom: 5px;
   font-size: 20px;
 }
+/* Styling for text inputs, email inputs, and text areas */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -196,6 +202,7 @@ textarea {
 textarea {
   resize: vertical;
 }
+/* Styling for contact button */
 .ContactButton {
   display: block;
   width: 100%;

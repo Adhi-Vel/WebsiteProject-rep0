@@ -69,13 +69,14 @@ button {
   animation: button-particles 1s ease-in-out infinite;
 }
 /* ------------------------------------------------------------ */
+/* Styling for the cover section */
 .GetInvolvedCover {
   height: 85vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("GetInvolved.avif");
+    url("GetInvolvedCover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position:center;
   position: relative;
   display: flex;
   align-items: center;
@@ -87,6 +88,7 @@ button {
   color: ghostwhite;
   text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
 }
+/* Styling for the main container */
 .MainContainer {
   width: 800px;
   margin: auto;
@@ -104,25 +106,28 @@ button {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+/* Styling for the button */
 .btn {
-  background-color: #ff3c10;
-  padding: 14px 40px;
-  color: #fff;
-  letter-spacing: 2px;
-  cursor: pointer;
-  border-radius: 100px;
-  border: 2px dashed #ff3c10;
-  transition: 0.4s;
+  background-color: #ff3c10; /* Set background color */
+  padding: 14px 40px; /* Add padding */
+  color: #fff; /* Set text color to white */
+  letter-spacing: 2px; /* Add letter spacing */
+  cursor: pointer; /* Set cursor to pointer */
+  border-radius: 100px; /* Add border radius */
+  border: 2px dashed #ff3c10; /* Add dashed border */
+  transition: 0.4s; /* Add transition effect */
 }
+/* Styling for links within the button */
 .btn a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
 }
+/* Styling for hover effect on the button */
 .btn:hover {
-  transition: 0.4s;
-  border: 2px dashed #ff3c10;
-  background-color: #fff;
-  color: #ff3c10;
+  transition: 0.4s; /* Add transition effect */
+  border: 2px dashed #ff3c10; /* Change border color on hover */
+  background-color: #fff; /* Change background color on hover */
+  color: #ff3c10; /* Change text color on hover */
 }
 /* ------------------------------------------------------------ */
 div.footer-container {

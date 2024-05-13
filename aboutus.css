@@ -69,9 +69,11 @@ button {
   animation: button-particles 1s ease-in-out infinite;
 }
 /* -------------------------------------------------- */
+/* Main Content Styles */
 main {
   background-color: #000f3c;
 }
+/* About Us Cover Styles */
 .AboutUsCover {
   height: 85vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -88,6 +90,7 @@ main {
   color: white;
   text-shadow: 2px 2px 4px rgb(154, 205, 50, 0.5);
 }
+/* Styling for text within the cover section */
 .AboutUsCovertext {
   padding: 30px;
   width: 100%;
@@ -108,6 +111,7 @@ main {
   width: 700px;
   margin: 0 auto;
 }
+/* Styling for slots within the cover section */
 .AboutUsSlot1,
 .AboutUsSlot2,
 .AboutUsSlot3 {
@@ -125,6 +129,7 @@ main {
   font-size: 20px;
   color: ghostwhite;
 }
+/* Styling for text and image slots */
 .Textslot1,
 .Textslot2,
 .Textslot3,
@@ -136,6 +141,7 @@ main {
   padding: 40px;
   border: 1px solid aqua;
 }
+/* Styling for the last section */
 .AboutUsLast {
   background-color: white;
   padding: 20px;

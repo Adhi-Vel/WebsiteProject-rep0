@@ -69,19 +69,19 @@ button {
   animation: button-particles 1s ease-in-out infinite;
 }
 /* ----------------------------------- */
+/* Styling for the cover page section */
 .ServicesCoverpage {
-  height: 85vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("ServicesCover.avif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 20px;
-  color: ghostwhite;
+  height: 85vh; /* Set height to 85% of the viewport height */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ServicesCover.jpg"); /* Apply a gradient overlay and an image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: cover; /* Cover the entire container */
+  position: relative; /* Positioning context for absolute positioning */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding-left: 20px; /* Add left padding */
+  color: ghostwhite; /* Setting text color */
 }
 .ServicesCoverpage h1 {
   font-size: 85px;
@@ -91,6 +91,7 @@ button {
 .ServicesCoverpage h2 {
   font-size: 35px;
 }
+/* Styling for the quote container */
 .ServicesQuoteContainer {
   display: flex;
   justify-content: center;
@@ -110,7 +111,7 @@ button {
   font-style: italic; /* Italic font style */
   color: #333; /* Dark text color */
 }
-/* Adding quotation mark before the content */
+/* Styling for the quotation mark before the quote content */
 .ServicesQuote h5:before {
   content: open-quote; /* Unicode for open-quote */
   font-size: 45px; /* Adjust size */
@@ -128,6 +129,7 @@ button {
   bottom: -25px; /* Adjust vertical position */
   right: 0; /* Align with the right border */
 }
+/* Styling for the contents section */
 .ServicesContents {
   max-width: 800px;
   margin: auto;
@@ -155,11 +157,13 @@ button {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+/* Styling for the impact report section */
 .ImpactReport {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* Using table for styling of the impact report */
 table {
   width: 70%;
   border-collapse: collapse;
@@ -184,10 +188,11 @@ td {
   border: 1px solid #ccc;
   font-size: 18px;
 }
-
+/* Styling for even rows in the table body */
 tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+/* Styling for table rows on hover */
 tbody tr:hover {
   background-color: #e0e0e0;
 }

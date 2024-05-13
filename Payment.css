@@ -69,6 +69,7 @@ button {
   animation: button-particles 1s ease-in-out infinite;
 }
 /* -------------------------------------------------- */
+/* Styling for the payment container */
 .PaymentContainer {
   display: flex;
   flex-direction: column;
@@ -79,11 +80,13 @@ button {
   padding: 20px;
   margin-bottom: 30px;
 }
+/* Styling for the donation wrapper */
 .DonationWrapper {
   display: flex;
   justify-content: space-between;
   max-width: 60vw;
 }
+/* Styling for parts 1 and 2 */
 .Part1, .Part2 {
   width: 40vw;
   margin: 0 20px;
@@ -105,15 +108,17 @@ button {
 .InputClass {
   margin-bottom: 20px;
 }
+/* Styling for display class */
 .DisplayClass {
-  display: flex; 
-  align-items: center;
-  margin-bottom: 20px;
-  background-color: white;
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px; /* Add bottom margin */
+  background-color: white; /* Set background color */
 }
-.DisplayClass input[type="text"]{
-  flex: 1;
-  margin-right: 5px;
+/* Styling for text inputs within display class */
+.DisplayClass input[type="text"] {
+  flex: 1; /* Take remaining space */
+  margin-right: 5px; /* Add right margin */
 }
 .DisplayClass p {
   font-size: 18px;
@@ -121,8 +126,9 @@ button {
   color: grey; 
 }
 .DisplayClass img{
-  width: auto ;
+  width: auto ; /* Automatically adjust width */
 }
+/* Styling for text and email inputs */
 input[type="text"],
 input[type="email"] {
   width: 100%;
@@ -138,9 +144,10 @@ input[type="email"]:focus {
   outline: none;
 }
 .SideInput input {
-  width: calc(33.33% - 5px);
+  width: calc(33.33% - 5px); /* Calculate width */
   margin-bottom: 20px;
 }
+/* Styling for submit button */
 .Submit{
   background-color: #007bff;
   color: white;
@@ -152,6 +159,7 @@ input[type="email"]:focus {
   transition: background-color 0.3s;
   width: 30%;
 }
+/* Styling for hover effect on submit button */
 .Submit:hover {
   background-color: #0056b3;
 }

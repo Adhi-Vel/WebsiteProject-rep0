@@ -69,6 +69,7 @@ button {
   animation: button-particles 1s ease-in-out infinite;
 }
 /* ------------------------------------------------------------------- */
+/* Styling for the cover section */
 .DonationCover {
   height: 85vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -106,6 +107,7 @@ button {
   margin: 0 auto;
   text-align: center;
 }
+/* Styling for donation list */
 .DonateList{
   width: 70vw;
   font-size: 20px;
@@ -116,6 +118,7 @@ button {
   margin-bottom: 10px;
   text-align: left;
 }
+/* Styling for list items within donation list */
 .DonateList li, .DonateList strong {
   font-size: 20px;
   text-align: left;
@@ -139,6 +142,7 @@ button {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+/* Styling for first and last child divs within the donation form */
 .DonateForm div:first-child {
   margin-bottom: 60px;
 }
@@ -148,6 +152,7 @@ button {
 .DonateForm label {
   font-size: 20px;
 }
+/* Styling for select input within the donation form */
 .DonateForm select {
   width: 100%;
   padding: 10px;
@@ -155,14 +160,15 @@ button {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+/* Styling for the submit button within the donation form */
 .DonateForm button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 160px;
-  border: none;
-  background-color: #4CAF50;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding */
+  margin-top: 160px; /* Add top margin */
+  border: none; /* Remove border */
+  background-color: #4CAF50; /* Set background color */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
 }
 .DonateForm a {
   text-decoration: none;
@@ -172,6 +178,7 @@ button {
 .DonateForm button:hover {
   background-color: #45a049;
 }
+/* Styling for the extra part section */
 .ExtraPart {
   background-color: #000f3c;
   color: ghostwhite;
